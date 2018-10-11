@@ -1,0 +1,32 @@
+{
+    "name": "xshredder-core",
+    "version": "0.0.6",
+    "description": "the core library of xshredder",
+    "main": "dist/index.js",
+    "scripts": {
+        "prepublishOnly": "npm run build",
+        "build": "tsc",
+        "test": "mocha -r ts-node/register src/**/*.spec.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://fuzhisoft.visualstudio.com/xshredder-core/_git/xshredder-core"
+    },
+    "keywords": [],
+    "author": "Zhao Yu",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/chai": "^4.1.4",
+        "@types/mocha": "^5.2.4",
+        "chai": "^4.1.2",
+        "gulp": "^3.9.1",
+        "gulp-typescript": "^5.0.0-alpha.3",
+        "mocha": "^5.2.0",
+        "ts-node": "^7.0.0",
+        "tslint": "^5.10.0",
+        "typescript": "^2.9.2"
+    },
+    "dependencies": {
+        "big-integer": "^1.6.32"
+    }
+}
